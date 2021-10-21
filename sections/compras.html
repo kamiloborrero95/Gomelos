@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gomelos te ofrece productos como: colombinas de coco, postres de coco, figuras en masmelos, dulces de mani entre otros.">
+    <meta name="keywords" content="masmelos, gomas, dulces, coco, mani, colombinas, dulceria, bocadillo, roscon, galletas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0658fe1b8e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/sass/main.css">
+    <title>Compras - Gomelos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container-fluid">
+           
+            <nav class="navbar navbar-expand-lg navbar-light mt-3 mb-5">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Productos
+                        </a>
+                        <ul class="dropdown-menu  border border-danger" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item link-danger" href="catalogo.html">Catalogo</a></li>
+                          <li><a class="dropdown-item link-danger" href="compras.html">Compras</a></li>
+                          <li><a class="dropdown-item link-danger" href="contactos.html">Contactos</a></li>
+                        </ul>
+                      </li>
+                      
+                    </ul>
+                    
+                    <a class="compras" href="./compras.html"><i class="fas fa-shopping-cart"></i></a>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                      <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+              <div class="row">
+                <div class="col-12 text-center">
+                    <a href="../index.html" class="logo">GOMELOS</a>
+                    <p class="logo__texto">Bienvenidos.</p>
+                </div>  
+              </div>
+            </div>
+        </div>
+    </header>
+    <h1>Realice sus compras con el siguiente formulario:</h1>
+    <div class="container-fluid">
+        <div class="cards row">
+            
+            <div class="alert alert-warning w-75" role="alert">
+              <p><span class="badge rounded-pill bg-warning text-dark">Atencion!</span>Recuerde tener en cuenta que productos como <em>Masmelos, colombinas de coco, galletas y resobados</em> vienen en presentaciones por paquetes o de varias unidades, lo cual puede revisar en el<a class="link-danger text-decoration-none" href="./catalogo.html">Catalogo</a></p>
+            </div>
+            <div class="alert alert-warning w-75" role="alert">
+              <p><span class="badge rounded-pill bg-warning text-dark">Atencion!</span>En esta seccion podra encontrar todos los productos que ofrecemos con sus respectivos precios y fotografias; si desea realizar alguna consulta adicional puede hacerlo a traves de<a class="link-danger text-decoration-none" href="./contactos.html">Contactos</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <main class="mainCompras container-fluid">
+      <section class="row">
+        <article class="col-lg-8">
+          <form id="formularioCompras">
+            <fieldset class="datosBasicos">
+                <legend>datos basicos</legend>
+                <label for="name">Nombres y Apellidos:*</label>
+                <input type="text" name="name" placeholder="Nombre completo" required/>
+                <label for="address">Direccion:*</label>
+                <input type="text" name="address" placeholder="direccion" required>
+                <label for="tel">telefono:*</label>
+                <input type="tel" name="tel" placeholder="3xx xxx xxxx" pattern="[0-9]" required>
+                <label for="ciudad">seleccione la ciudad:</label>
+                <select name="ciudad" id="">
+                    <option value="bogota">Bogota</option>
+                    <option value="tunja">Tunja</option>
+                    <option value="medellin">Medellin</option>
+                    <option value="bucaramanga">Bucaramanga</option>
+                </select>
+            </fieldset>
+            <fieldset class="campoPedido">
+                <legend>Datos de pedido</legend>
+            <table class="tablaPedido">
+                <tr>
+                    <th>Seleccionar</th>
+                    <th>Producto</th>
+                    <th>cantidad</th>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="pedido"></td>
+                    <td><label for="pedido">Coquitos</label></td>
+                    <td><input type="number" min="20" placeholder="min 20"></td>
+                    
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="pedido"></td>
+                    <td><label for="pedido">Masmelos</label></td>
+                    <td><input type="number" min="20" placeholder="min 20"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="pedido"></td>
+                    <td><label for="pedido">Resobados</label></td>
+                    <td><input type="number" min="20" placeholder="min 20"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="pedido"></td>
+                    <td><label for="pedido">galleta en bandeja</label></td>
+                    <td><input type="number" min="20" placeholder="min 20"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="pedido"></td>
+                    <td><label for="pedido">Postre de chocolate</label></td>
+                    <td><input type="number" min="20" placeholder="min 20"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="pedido"></td>
+                    <td><label for="pedido">Caramelos</label></td>
+                    <td><input type="number" min="20" placeholder="min 20"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="pedido"></td>
+                    <td><label for="pedido">Colombinas de coco</label></td>
+                    <td><input type="number" min="20" placeholder="min 20"></td>
+                </tr>
+            </table>
+            <label for="textarea">Deje sus comentarios:</label>
+            <div>
+                <textarea  class="textAreaCompras" name="textarea" id="" cols="40" rows="10" placeholder="Esriba su comentario aqui..."></textarea>
+            </div>
+            </fieldset>
+            <div class="botonesCompras">
+            <input type="submit" name="enviar" id="">
+            <input type="reset">
+            </div>
+          </form>
+        </article>
+        <aside class="asideCompras col-lg-4">
+            <div class="card">
+              <img src="../images/coquitos.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Coquitos</h5>
+                <p class="card-text">X 8 unidades. $2300</p>
+              </div>
+            </div>
+            <div class="card" ">
+              <img src="../images/masmelos.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Masmelos</h5>
+                <p class="card-text">X 20 unidades. $28000</p>
+              </div>
+            </div>
+            <div class="card" ">
+              <img src="../images/chocolate.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Chocolate</h5>
+                <p class="card-text">X 9 unidades. $3000</p>
+              </div>
+            </div>
+            <div class="card" ">
+              <img src="../images/galletaBandeja.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Galletas en bandeja</h5>
+                <p class="card-text">X  15 unidades. $2000</p>
+              </div>
+            </div>
+            <div class="card" ">
+              <img src="../images/resobados.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Resobados</h5>
+                <p class="card-text">X 5 unidades. $3000</p>
+              </div>
+            </div>
+            <div class="card"">
+              <img src="../images/colombinas de coco.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Colombinas de coco</h5>
+                <p class="card-text">X 12 y 24 unds $1600 y $2500</p>
+              </div>
+            </div>
+            <div class="card"">
+              <img src="../images/caramelos.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Caramelos</h5>
+                <p class="card-text">X 16 unidades. $2500</p>
+              </div>
+            </div>
+            <div class="card"">
+              <img src="../images/maremani.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5>Maremani</h5>
+                <p class="card-text">X 13 unidades. $2000</p>
+              </div>
+            </div>
+        </aside>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+        <h3>GOMELOS</h3>
+        <div class="footer__copy"><i class="far fa-copyright"></i>
+        <p>Esta es una empresa registrada.</p>
+        <p>Camara de comercio.</p>
+        <p>Colombia.</p>
+        </div>
+        <div class="footer__redes">
+            <a class="footer__redes--facebook" href="#"><i class="fab fa-facebook-square"></i></a>
+            <a class="footer__redes--whatsapp" href="#"><i class="fab fa-whatsapp-square"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

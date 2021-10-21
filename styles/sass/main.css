@@ -1,0 +1,1393 @@
+* {
+  margin: 0.5em;
+  padding: 0;
+}
+
+/*NOSOTROS*/
+/*transformacion 2D*/
+.container-fluid {
+  /* CUBO 3D*/
+}
+
+.container-fluid .transform {
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(orange));
+  background: linear-gradient(180deg, red, orange);
+  width: 100px;
+  height: 100px;
+  margin: 10% 1% 10% 1%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-animation: skew 3s infinite;
+          animation: skew 3s infinite;
+  -webkit-transform: skew(10deg);
+          transform: skew(10deg);
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.container-fluid .transform i {
+  font-size: 3em;
+}
+
+@-webkit-keyframes skew {
+  0% {
+    -webkit-transform: skew(5deg, 5deg);
+            transform: skew(5deg, 5deg);
+  }
+  100% {
+    -webkit-transform: skew(-5deg, -5deg);
+            transform: skew(-5deg, -5deg);
+  }
+}
+
+@keyframes skew {
+  0% {
+    -webkit-transform: skew(5deg, 5deg);
+            transform: skew(5deg, 5deg);
+  }
+  100% {
+    -webkit-transform: skew(-5deg, -5deg);
+            transform: skew(-5deg, -5deg);
+  }
+}
+
+.container-fluid .row > p {
+  background: linear-gradient(95deg, #ffa400 53%, white 100%);
+  font-size: 1.4em;
+  width: 80%;
+  height: auto;
+  text-indent: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-fluid .row > p .imgNosotros {
+  width: 320px;
+}
+
+.container-fluid .divSpe {
+  background: linear-gradient(95deg, #ffa400 53%, white 100%);
+  font-size: 1.4em;
+  height: 70vh;
+}
+
+.container-fluid #envoltura {
+  width: 300px;
+  height: 300px;
+  -webkit-perspective: 700px;
+          perspective: 700px;
+  margin: 100px auto;
+}
+
+.container-fluid .cubo {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-left: 400px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateY(35deg) rotateX(-38deg);
+          transform: rotateY(35deg) rotateX(-38deg);
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
+}
+
+.container-fluid .cubo:hover {
+  -webkit-transform: rotateY(125deg) rotateX(155deg);
+          transform: rotateY(125deg) rotateX(155deg);
+}
+
+.container-fluid .cubo div {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: gray;
+}
+
+.container-fluid .cubo div img {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+}
+
+.container-fluid .cubo div:nth-child(1) {
+  -webkit-transform: translateZ(75px);
+          transform: translateZ(75px);
+  background: darkblue;
+}
+
+.container-fluid .cubo div:nth-child(2) {
+  -webkit-transform: rotateX(180deg) translateZ(75px);
+          transform: rotateX(180deg) translateZ(75px);
+  background: darkred;
+}
+
+.container-fluid .cubo div:nth-child(3) {
+  -webkit-transform: rotateY(-90deg) translateZ(75px);
+          transform: rotateY(-90deg) translateZ(75px);
+  background: darkorange;
+}
+
+.container-fluid .cubo div:nth-child(4) {
+  -webkit-transform: rotateY(90deg) translateZ(75px);
+          transform: rotateY(90deg) translateZ(75px);
+  background: darkcyan;
+}
+
+.container-fluid .cubo div:nth-child(5) {
+  -webkit-transform: rotateX(90deg) translateZ(75px);
+          transform: rotateX(90deg) translateZ(75px);
+  background: yellow;
+}
+
+.container-fluid .cubo div:nth-child(6) {
+  -webkit-transform: rotateX(-90deg) translateZ(75px);
+          transform: rotateX(-90deg) translateZ(75px);
+  background: green;
+}
+
+/*CATALOGO*/
+.cbza {
+  width: 80%;
+  background: linear-gradient(95deg, #ffa400 53%, white 100%);
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.cbza .breadcrumb {
+  margin: 0.5em;
+  width: 60vw;
+}
+
+.cbza .breadcrumb .breadcrumb-item, .cbza .breadcrumb a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.cbza .btn-group {
+  width: 15vw;
+  height: 7vh;
+}
+
+.catalogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.catalogo .card {
+  height: 90vh;
+  /*background: rgb(255,164,0);
+        background: linear-gradient(180deg, rgba(255,164,0,1) 0%, rgba(255,255,255,1) 100%);*/
+}
+
+.catalogo .card--masmelo {
+  background-color: #ffa400;
+}
+
+.catalogo .card--coquitos {
+  background-color: #e88c0c;
+}
+
+.catalogo .card--chocolate {
+  background-color: #ffa400;
+}
+
+.catalogo .card--colombinas {
+  background-color: #e88c0c;
+}
+
+.catalogo .card--bandeja {
+  background-color: #ffa400;
+}
+
+.catalogo .card--resobado {
+  background-color: #e88c0c;
+}
+
+.catalogo .card--caramelo {
+  background-color: #ffa400;
+}
+
+.catalogo .card--maremani {
+  background-color: #e88c0c;
+}
+
+.catalogo .card-text {
+  width: 100%;
+  text-indent: 20px;
+}
+
+.catalogo .card-img-top1 {
+  width: 270px;
+  height: 200px;
+}
+
+.catalogo .card-img-top2 {
+  width: 270px;
+  height: 200px;
+}
+
+.catalogo .card-img-top3 {
+  width: 270px;
+  height: 200px;
+}
+
+.catalogo .card-img-top4 {
+  width: 270px;
+  height: 200px;
+}
+
+.catalogo .card-img-top5 {
+  width: 270px;
+  height: 200px;
+}
+
+.catalogo .card-img-top6 {
+  width: 270px;
+  height: 200px;
+}
+
+.catalogo .card-img-top7 {
+  width: 270px;
+  height: 200px;
+}
+
+.catalogo .card-img-top8 {
+  width: 270px;
+  height: 200px;
+}
+
+.catalogo .card-title {
+  text-align: center;
+}
+
+.catalogo .btn {
+  position: absolute;
+  left: 30%;
+  bottom: 5px;
+}
+
+/*Compras*/
+.mainCompras {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin: 0;
+}
+
+.mainCompras .asideCompras {
+  width: 30%;
+  margin: 0.3em;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.mainCompras .asideCompras .card {
+  background: chartreuse;
+  width: 13vw;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.mainCompras .asideCompras .card .card-body {
+  width: 100%;
+  margin: 0;
+}
+
+.mainCompras .asideCompras .card .card-img-top {
+  width: 11.5vw;
+  height: 25vh;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.mainCompras .asideCompras .card .card-text {
+  font-size: 0.8em;
+}
+
+#formularioCompras {
+  width: 60vw;
+  background-color: #ffa400;
+  font-size: 1.2em;
+  border: 5px solid #eb6200;
+  margin: 0;
+}
+
+#formularioCompras fieldset {
+  margin: .3em;
+}
+
+#formularioCompras input, label, select {
+  display: block;
+}
+
+.datosBasicos input {
+  width: 18vw;
+}
+
+.tablaPedido td {
+  border: 1px solid;
+}
+
+.tablaPedido {
+  width: 100%;
+  text-align: center;
+  margin: .6em;
+  margin-left: 0;
+}
+
+.tablaPedido input {
+  width: 6vw;
+  border: 2px solid;
+  margin-left: 5em;
+}
+
+.modal-contenido {
+  background-color: aqua;
+  width: 300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#miModal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/*CONTACTOS*/
+.contactForm {
+  text-align: center;
+  text-justify: left;
+  width: 40vw;
+  height: auto;
+  margin: 1em auto;
+  border-radius: .6em;
+  background-color: #fbfbfb;
+}
+
+.formulario input {
+  background-color: #fbfbfb;
+  width: 30vw;
+  height: 4vh;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff5d0d;
+  margin-top: 0.6em;
+  padding-left: .6em;
+  margin-bottom: 1.2em;
+}
+
+.formulario textarea {
+  background-color: #fbfbfb;
+  width: 25vw;
+  height: 12vh;
+  border-radius: .3em;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff5d0d;
+  margin-top: .6em;
+  padding-left: .6em;
+  margin-bottom: 1.2em;
+  padding-top: 0.93em;
+}
+
+.formulario label {
+  display: block;
+  float: center;
+}
+
+.formulario button {
+  height: 5vh;
+  padding-left: .3em;
+  padding-right: .3em;
+  margin-bottom: 1.2em;
+  margin-top: .6em;
+  text-transform: uppercase;
+  background-color: #ff5d0d;
+  border-color: #ffa400;
+  border-style: solid;
+  border-radius: 10px;
+  width: 20vw;
+  cursor: pointer;
+}
+
+.formulario button p {
+  color: #fff;
+}
+
+.formulario span {
+  color: #ff5d0d;
+}
+
+.aviso {
+  font-size: .7em;
+  color: #0e0e0e;
+}
+
+.formulario h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #ff5d0d;
+}
+
+.formulario h3 {
+  font-size: 1em;
+  padding-bottom: 1.8em;
+  color: #0e0e0e;
+}
+
+.formulario p {
+  font-size: .9em;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid #97d848;
+}
+
+.infoContactos, .geo h3 {
+  color: #ff5d0d;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background: #ff7300;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff7300), color-stop(46%, #ffa1a1), to(#ff3300));
+    background: linear-gradient(180deg, #ff7300 0%, #ffa1a1 46%, #ff3300 100%);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .header .navbar {
+    height: 3em;
+    border: 1px solid white;
+    background: linear-gradient(95deg, #ffa400 53%, white 100%);
+  }
+  .header .navbar .form-control {
+    height: 2em;
+    margin-top: 0.2em;
+  }
+  .header .navbar .dropdown-menu {
+    background: linear-gradient(95deg, #ffa400 53%, white 100%);
+  }
+  .header .compras i {
+    color: #eb6200;
+    font-size: 2em;
+  }
+  .header .logo {
+    color: #ff5d0d;
+    font-family: "Lobster", cursive;
+    font-size: 10em;
+    text-decoration: none;
+    text-shadow: 3px 3px black;
+    cursor: pointer;
+  }
+  .header .logo:hover {
+    color: #eb6200;
+  }
+  .header .logo::before {
+    content: "";
+    width: 5%;
+    height: 4px;
+    background: red;
+    position: absolute;
+    top: 23%;
+    left: 40%;
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+    -webkit-transition: 0.8s all;
+    transition: 0.8s all;
+  }
+  .header .logo::after {
+    content: "";
+    width: 0%;
+    height: 4px;
+    background: red;
+    position: absolute;
+    bottom: 32%;
+    left: 48%;
+    -webkit-transform: translateX(-40%);
+            transform: translateX(-40%);
+    -webkit-transition: 0.8s all;
+    transition: 0.8s all;
+  }
+  .header .logo:hover::before {
+    width: 0;
+  }
+  .header .logo:hover::after {
+    width: 25%;
+  }
+  .header .logo__texto {
+    font-size: 2em;
+    font-style: italic;
+  }
+  .container-fluid {
+    margin: 0;
+    height: auto;
+  }
+  .container-fluid .article > h2 {
+    font-family: "Lobster", cursive;
+    font-size: 4em;
+    color: #ff5d0d;
+    text-shadow: 1px 1px whitesmoke;
+  }
+  .container-fluid .accordion {
+    background: linear-gradient(95deg, #ffa400 53%, white 100%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    margin-bottom: 1.8em;
+  }
+  .container-fluid .accordion .accordion-body {
+    width: 90vw;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 2em;
+  }
+  .container-fluid .accordion .accordion-item {
+    width: 90vw;
+    background: linear-gradient(95deg, #ffa400 53%, white 100%);
+  }
+  .container-fluid .accordion .accordion-button {
+    background: linear-gradient(95deg, #ffa400 53%, white 100%);
+  }
+  .container-fluid .accordion .imagenesAcordeon {
+    width: 60vw;
+    height: 45vh;
+  }
+  .container-fluid .aside {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "productos ubicacion" "recorridos contactos";
+    grid-column: 50% 50%;
+    grid-row: 50% 50%;
+    border: 1px solid #eb6200;
+  }
+  .container-fluid .aside div {
+    border: 1px solid #eb6200;
+    background: linear-gradient(95deg, #ffa400 53%, white 100%);
+  }
+  .container-fluid .aside i {
+    font-size: 3.5em;
+    width: 90%;
+    text-align: center;
+    color: #eb6200;
+  }
+  .container-fluid .aside h3 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .container-fluid .aside p {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .footer {
+    height: 30vh;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo logo" "copy redes";
+    -ms-grid-rows: 20% 80%;
+        grid-template-rows: 20% 80%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    border-top: 2px solid #ff5d0d;
+  }
+  .footer h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+    font-family: "Lobster", cursive;
+    font-size: 5em;
+    color: #ffa400;
+    text-shadow: 3px 1.5px #ff5d0d;
+    text-align: center;
+  }
+  .footer h3 i {
+    font-size: .5em;
+  }
+  .footer__copy {
+    line-height: 0.8em;
+    text-align: center;
+    margin-top: 1.6em;
+  }
+  .footer__redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    padding: 1.5em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 4em;
+  }
+  .footer .footer__redes--facebook {
+    color: #3b5998;
+  }
+  .footer .footer__redes--whatsapp {
+    color: #00bb2d;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background: #ff7300 no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff5d0d), color-stop(85%, #ff8100), to(white));
+    background: linear-gradient(to bottom, #ff5d0d 0%, #ff8100 85%, white 100%);
+    height: auto;
+  }
+  .header .navbar {
+    background: none;
+    border: none;
+    height: auto;
+  }
+  .header .navbar-toggler {
+    background: #ffa400;
+  }
+  .header .navbar .collapse ul li {
+    background: #ffa400;
+  }
+  .header .navbar .dropdown-menu {
+    background: none;
+  }
+  .header .navbar .dropdown-menu a {
+    color: white;
+  }
+  .header .navbar .d-flex .btn {
+    background: #e88c0c;
+    color: white;
+    border: 1px solid white;
+  }
+  .header .navbar .form-control {
+    background: #e88c0c;
+  }
+  .header .compras i {
+    color: white;
+    font-size: 2em;
+  }
+  .header .logo {
+    font-size: 4em;
+    color: white;
+    text-shadow: 3px 3px #ffa400;
+    font-family: "Lobster", cursive;
+    text-decoration: none;
+  }
+  .header .logo::before {
+    width: 0;
+  }
+  .header .logo__texto {
+    font-size: 1.4em;
+  }
+  .accordion {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 2px dotted white;
+    margin-left: 0;
+  }
+  .accordion-body {
+    font-size: 1.2em;
+  }
+  .accordion-body a {
+    text-decoration: none;
+    color: #ffa400;
+  }
+  .accordion-item, .accordion.button {
+    background: red;
+    color: white;
+  }
+  .imagenesAcordeon {
+    width: 70vw;
+    height: 50vh;
+  }
+  .aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80vw;
+  }
+  .aside i {
+    font-size: 3em;
+    width: 85vw;
+    text-align: center;
+    color: white;
+  }
+  .aside h3, .aside p {
+    text-align: center;
+    color: white;
+    border: 3px solid white;
+    border-style: double;
+  }
+  .footer {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo logo" "copy redes";
+    -ms-grid-rows: 30% 70%;
+        grid-template-rows: 30% 70%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    border-top: 2px solid #ff5d0d;
+    height: auto;
+  }
+  .footer h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+    font-family: "Lobster", cursive;
+    font-size: 3em;
+    color: #ff5d0d;
+    text-align: center;
+  }
+  .footer h3 i {
+    font-size: .5em;
+  }
+  .footer__copy {
+    line-height: 0.8em;
+    text-align: center;
+    margin-top: 1.6em;
+  }
+  .footer__redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 3em;
+  }
+  .footer .footer__redes--facebook {
+    color: #3b5998;
+  }
+  .footer .footer__redes--whatsapp {
+    color: #00bb2d;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background: #ff7300;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff3300), color-stop(46%, #ffa1a1), to(#ff7300));
+    background: linear-gradient(180deg, #ff3300 0%, #ffa1a1 46%, #ff7300 100%);
+    height: auto;
+  }
+  .header .navbar {
+    background: none;
+    border: none;
+    height: auto;
+  }
+  .header .navbar .navbar-toggler {
+    background: #ffa400;
+  }
+  .header .navbar .collapse ul li {
+    background: #ffa400;
+  }
+  .header .navbar .dropdown-menu {
+    background: none;
+  }
+  .header .navbar .dropdown-menu a {
+    color: white;
+  }
+  .header .navbar .d-flex .btn {
+    background: #e88c0c;
+    color: whi;
+    border: 1px solid white;
+  }
+  .header .navbar .form-control {
+    background: #e88c0c;
+  }
+  .header .compras i {
+    color: white;
+    font-size: 2em;
+  }
+  .header .logo {
+    font-size: 4em;
+    color: white;
+    text-shadow: 3px 3px black;
+    font-family: "Lobster", cursive;
+    text-decoration: none;
+  }
+  .header .logo::before {
+    width: 0;
+  }
+  .header .logo__texto {
+    font-size: 1.4em;
+  }
+  .accordion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 2px dotted white;
+    margin-left: 0;
+  }
+  .accordion-body {
+    font-size: 1.2em;
+  }
+  .accordion-body a {
+    text-decoration: none;
+    color: #ffa400;
+  }
+  .accordion-item, .accordion.button {
+    width: 90vw;
+    background: red;
+    color: white;
+  }
+  .imagenesAcordeon {
+    width: 60vw;
+    height: 50vh;
+  }
+  .aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 97%;
+    border: 1px solid;
+  }
+  .aside i {
+    font-size: 3em;
+    width: 93%;
+    text-align: center;
+  }
+  .aside h3, .aside p {
+    text-align: center;
+  }
+  .footer {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo logo" "copy redes";
+    -ms-grid-rows: 20% 80%;
+        grid-template-rows: 20% 80%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    border-top: 2px solid #ff5d0d;
+    height: 30vh;
+  }
+  .footer h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+    font-family: "Lobster", cursive;
+    font-size: 3em;
+    color: white;
+    text-shadow: 3px 1.5px #ff5d0d;
+    text-align: center;
+  }
+  .footer h3 i {
+    font-size: .5em;
+  }
+  .footer__copy {
+    line-height: 0.8em;
+    text-align: center;
+    margin-top: 1.6em;
+  }
+  .footer__redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 3em;
+  }
+  .footer .footer__redes--facebook {
+    color: #3b5998;
+  }
+  .footer .footer__redes--whatsapp {
+    color: #00bb2d;
+  }
+}
+
+/*NOSOTROS*/
+@media screen and (max-width: 480px) {
+  .header .navbar {
+    background: none;
+    border: none;
+    height: auto;
+  }
+  .header .navbar-toggler {
+    background: #ffa400;
+  }
+  .header .navbar .collapse ul li {
+    background: #ffa400;
+  }
+  .header .navbar .dropdown-menu {
+    background: none;
+  }
+  .header .navbar .dropdown-menu a {
+    color: white;
+  }
+  .header .navbar .d-flex .btn {
+    background: #e88c0c;
+    color: white;
+    border: 1px solid white;
+  }
+  .header .navbar .form-control {
+    background: #e88c0c;
+  }
+  .header .compras i {
+    color: white;
+    font-size: 2em;
+  }
+  .header .logo {
+    font-size: 4em;
+    color: white;
+    text-shadow: 3px 3px #ffa400;
+    font-family: "Lobster", cursive;
+    text-decoration: none;
+  }
+  .header .logo::before {
+    width: 0;
+  }
+  .header .logo__texto {
+    font-size: 1.4em;
+  }
+  .container-fluid .transform {
+    display: none;
+  }
+  .container-fluid .row > p {
+    display: block;
+    width: 95vw;
+  }
+  .container-fluid .row > p .imgNosotros {
+    width: 65vw;
+    height: 30vh;
+  }
+  .container-fluid .divSpe {
+    width: 90vw;
+    height: auto;
+  }
+  .container-fluid .cubo {
+    display: none;
+  }
+  .footer {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo logo" "copy redes";
+    -ms-grid-rows: 30% 70%;
+        grid-template-rows: 30% 70%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    border-top: 2px solid #ff5d0d;
+    height: auto;
+  }
+  .footer h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+    font-family: "Lobster", cursive;
+    font-size: 3em;
+    color: #ff5d0d;
+    text-align: center;
+  }
+  .footer h3 i {
+    font-size: .5em;
+  }
+  .footer__copy {
+    line-height: 0.8em;
+    text-align: center;
+    margin-top: 1.6em;
+  }
+  .footer__redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 3em;
+  }
+  .footer .footer__redes--facebook {
+    color: #3b5998;
+  }
+  .footer .footer__redes--whatsapp {
+    color: #00bb2d;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1025px) {
+  .cubo {
+    display: none;
+  }
+}
+
+/*CATALOGO*/
+@media screen and (max-width: 480px) {
+  .header .navbar {
+    background: none;
+    border: none;
+    height: auto;
+  }
+  .header .navbar-toggler {
+    background: #ffa400;
+  }
+  .header .navbar .collapse ul li {
+    background: #ffa400;
+  }
+  .header .navbar .dropdown-menu {
+    background: none;
+  }
+  .header .navbar .dropdown-menu a {
+    color: white;
+  }
+  .header .navbar .d-flex .btn {
+    background: #e88c0c;
+    color: white;
+    border: 1px solid white;
+  }
+  .header .navbar .form-control {
+    background: #e88c0c;
+  }
+  .header .compras i {
+    color: white;
+    font-size: 2em;
+  }
+  .header .logo {
+    font-size: 4em;
+    color: white;
+    text-shadow: 3px 3px #ffa400;
+    font-family: "Lobster", cursive;
+    text-decoration: none;
+  }
+  .header .logo::before {
+    width: 0;
+  }
+  .header .logo__texto {
+    font-size: 1.4em;
+  }
+  .cbza {
+    display: block;
+    width: 100%;
+    background: #ffa400;
+  }
+  .cbza .breadcrumb {
+    margin: 0;
+    width: 80vw;
+  }
+  .cbza .breadcrumb .breadcrumb-item, .cbza .breadcrumb a {
+    color: black;
+  }
+  .card {
+    margin-left: 2em;
+  }
+  .footer {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo logo" "copy redes";
+    -ms-grid-rows: 30% 70%;
+        grid-template-rows: 30% 70%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    border-top: 2px solid #ff5d0d;
+    height: auto;
+  }
+  .footer h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: logo;
+    font-family: "Lobster", cursive;
+    font-size: 3em;
+    color: #ff5d0d;
+    text-align: center;
+  }
+  .footer h3 i {
+    font-size: .5em;
+  }
+  .footer__copy {
+    line-height: 0.8em;
+    text-align: center;
+    margin-top: 1.6em;
+  }
+  .footer__redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    font-size: 3em;
+  }
+  .footer .footer__redes--facebook {
+    color: #3b5998;
+  }
+  .footer .footer__redes--whatsapp {
+    color: #00bb2d;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cbza .breadcrumb .breadcrumb-item a {
+    color: black;
+  }
+  .catalogo .card {
+    margin: 1.8em;
+    height: 100vh;
+  }
+}
+
+/*COMPRAS*/
+@media screen and (max-width: 480px) {
+  .row > * {
+    margin-left: 0.5em;
+    width: 85%;
+    max-width: 90%;
+  }
+  .mainCompras .row {
+    width: 80%;
+  }
+  #formularioCompras {
+    width: 100vw;
+  }
+  .datosBasicos input {
+    width: 50vw;
+  }
+  .tablaPedido input {
+    width: 19vw;
+    border: 2px solid;
+    margin-left: 0.4em;
+  }
+  .textAreaCompras {
+    width: 70vw;
+  }
+  .mainCompras .asideCompras {
+    width: 100vw;
+  }
+  .mainCompras .asideCompras .card {
+    width: 100%;
+    height: 65vh;
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    margin-left: 1em;
+  }
+  .mainCompras .asideCompras .card .card-body {
+    width: 100%;
+  }
+  .mainCompras .asideCompras .card .card-img-top {
+    width: 45vw;
+    height: 40vhpx;
+    margin-left: 1em;
+  }
+  .mainCompras .asideCompras .card h5 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .mainCompras .asideCompras .card .card-text {
+    font-size: 1.4em;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 960px) {
+  .mainCompras {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .mainCompras .asideCompras {
+    width: 100%;
+    margin: 0.3em;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .mainCompras .asideCompras .card {
+    background: chartreuse;
+    width: 30vw;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  .mainCompras .asideCompras .card .card-img-top {
+    width: 210px;
+    height: 220px;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .mainCompras .asideCompras .card h5 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  .mainCompras .asideCompras .card .card-text {
+    font-size: 1.5em;
+  }
+  #formularioCompras {
+    width: auto;
+  }
+  .datosBasicos input {
+    width: 40vw;
+  }
+  .tablaPedido input {
+    width: 10vw;
+    margin-left: 2.5em;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .card h5 {
+    width: 100%;
+    margin-left: 0.2em;
+  }
+}
+
+/*CONTACTOS*/
+@media screen and (max-width: 480px) {
+  .contactForm {
+    width: 100vw;
+    margin: 0;
+  }
+  .formulario input {
+    width: 55vw;
+  }
+  .formulario button {
+    width: 30vw;
+  }
+  .formulario {
+    width: 100%;
+    font-size: 1.2em;
+  }
+  .formulario textarea {
+    width: 60vw;
+  }
+  .infoContactos, .geo {
+    width: 85vw;
+    font-size: 1.3em;
+  }
+  .infoContactos iframe, .geo iframe {
+    margin-left: 0;
+    width: 80vw;
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  iframe {
+    width: 40vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,822 @@
+    @media screen and (min-width: 992px){
+    body{
+        background: rgb(255,115,0);
+        background: linear-gradient(180deg, rgba(255,115,0,1) 0%, rgba(255,161,161,1) 46%, rgba(255,51,0,1) 100%);
+        height: 100vh;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: $font;
+    }
+    .header{
+        .navbar{
+            height: 3em;
+            border: 1px solid white;
+            background: $gradient1;
+    
+            .form-control{
+                height: 2em;
+                margin-top: 0.2em;
+            }
+            .dropdown-menu{
+                background: $gradient1;
+            }
+        }
+        .compras i{
+            color: $orange2;
+            font-size: 2em;
+        }
+        
+        .logo{
+            color: #ff5d0d;
+            font-family: $font2;
+            font-size: 10em;
+            text-decoration: none;
+            text-shadow: 3px 3px black;
+            cursor: pointer;
+    
+             &:hover{
+            color: #eb6200;
+          }
+            &::before{
+            content: "";
+            width: 5%;
+            height: 4px;
+            background: red;
+            position: absolute;
+            top: 23%;
+            left: 40%;
+            transform: translateX(-40%);
+            transition: 0.8s all;
+          }
+            &::after{
+            content: "";
+            width: 0%;
+            height: 4px;
+            background: red;
+            position: absolute;
+            bottom: 32%;
+            left: 48%;
+            transform: translateX(-40%);
+            transition: 0.8s all;
+          }
+          &:hover::before{
+            width: 0;
+          }
+          &:hover::after{
+            width: 25%;
+          }
+        }
+        .logo__texto{
+            font-size: 2em;
+            font-style: italic;
+        }
+    }
+    .container-fluid{
+        margin:0;
+        height: auto;
+    .article>h2{
+        font-family: $font2;
+        font-size: 4em;
+        color: $orange1;
+        text-shadow: 1px 1px whitesmoke;
+    }
+    
+    .accordion{
+        background: $gradient1;
+        display: flex;
+        flex-flow: column nowrap;
+        margin-bottom:1.8em;
+        
+        .accordion-body{
+            width: 90vw;
+            text-align:center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            font-size: 2em;
+        }
+        .accordion-item{
+            width: 90vw;
+            background: $gradient1;
+        }
+        .accordion-button{
+            background: $gradient1;
+        }
+        .imagenesAcordeon{
+                width: 60vw;
+                height: 45vh;
+        }
+    }
+    
+    .aside{
+        display: grid;
+        grid-template-areas: 
+        "productos ubicacion"
+        "recorridos contactos"
+        ;
+        grid-column: 50% 50%;
+        grid-row: 50% 50%;
+        border: 1px solid $orange2;
+        & div{
+            border: 1px solid $orange2;
+            background: $gradient1
+        }
+        & i{
+            font-size: 3.5em;
+            width: 90%;
+            text-align: center;
+            color: $orange2;
+        }
+        & h3{
+            font-size: 2em;
+            text-align: center;
+        }
+        & p{
+            font-size: 1.5em;
+            text-align: center;
+        }
+        }
+    }
+    .footer{
+        height: 30vh;
+        display: grid;
+        grid-template-areas: 
+        "logo logo"
+        "copy redes"
+        ;
+        grid-template-rows: 20% 80%;
+        grid-template-columns: 50% 50%;
+        border-top: 2px solid $orange1;
+    
+        & h3{
+            grid-area: logo;
+            font-family:$font2;
+            font-size: 5em;
+            color: $orange5;
+            text-shadow: 3px 1.5px $orange1;
+            text-align: center;
+        }
+        & h3 i{
+            font-size: .5em;
+        }
+    
+        &__copy{
+            line-height: 0.8em;
+            text-align: center;
+            margin-top: 1.6em;
+            
+        }
+        &__redes{
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 1.5em;
+            align-items: center;
+            font-size: 4em;
+        }
+        @each $red, $color in $redes {
+            .footer__redes--#{$red}{color: $color;}
+        }
+    }
+    }
+    @media screen and (max-width: 480px){   
+        body{
+            background:rgb(255,115,0) no-repeat;
+            background: linear-gradient(to bottom, $orange1 0%, $orange3 85%, white 100%);
+            height: auto;
+        }
+        .header{
+            .navbar{
+                background: none;
+                border: none;
+                height: auto;
+    
+                &-toggler{
+                    background: $orange5;
+                }
+    
+                .collapse ul li{
+                    background: $orange5;
+                }
+    
+                .dropdown-menu {
+                    background: none;
+                }
+                .dropdown-menu a{
+                    color: white;
+                }
+                .d-flex .btn{
+                    background: $orange4;
+                    color: white;
+                    border: 1px solid white;
+                }
+                .form-control{
+                    background: $orange4;
+                }
+            }
+            .compras i{
+                color: white;
+                font-size: 2em;
+            }
+            .logo{
+                font-size: 4em;
+                color: white;
+                text-shadow: 3px 3px $orange5;
+                font-family: $font2;
+                text-decoration:none;
+            }
+            .logo::before{
+                width: 0;
+            }
+            .logo__texto{
+                font-size: 1.4em;
+            }
+        }
+        .accordion{
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            border-bottom: 2px dotted white;
+            margin-left: 0;
+        }
+        .accordion-body{
+            font-size: 1.2em;
+            & a{
+                text-decoration: none;
+                color: $orange5;
+            }
+        }
+        .accordion-item, .accordion.button{
+            background: rgb(255, 0, 0);
+            color: white;
+        }
+        .imagenesAcordeon{
+                width: 70vw;
+                height: 50vh;
+        }
+        .aside{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            width: 80vw;
+    
+            & i{
+                font-size: 3em;
+                width: 85vw;
+                text-align: center;
+                color: white;
+            }
+            & h3, p{
+                text-align: center;
+                color: white;
+                border: 3px solid white;
+                border-style: double;
+            }
+        }
+        .footer{
+            display: grid;
+            grid-template-areas: 
+            "logo logo"
+            "copy redes"
+            ;
+            grid-template-rows: 30% 70%;
+            grid-template-columns: 50% 50%;
+            border-top: 2px solid $orange1;
+            height: auto;
+    
+            & h3{
+                grid-area: logo;
+                font-family: $font2;
+                font-size: 3em;
+                color: $orange1;
+                text-align: center;
+            }
+            & h3 i{
+                font-size: .5em;
+            }
+    
+            &__copy{
+                line-height: 0.8em;
+                text-align: center;
+                margin-top: 1.6em;
+            }
+            &__redes{
+                display: flex;
+                justify-content: space-evenly; 
+                font-size: 3em;
+            }
+            @each $red, $color in $redes {
+                .footer__redes--#{$red}{color: $color;}
+            }
+        }
+        
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px){
+        body{
+            background: rgb(255,115,0);
+            background: linear-gradient(180deg, rgba(255,51,0,1) 0%, rgba(255,161,161,1) 46%,rgba(255,115,0,1) 100%,);
+            height: auto;
+        }
+       .header{
+        .navbar{
+            background: none;
+            border: none;
+            height: auto;
+    
+            .navbar-toggler{
+                background: $orange5;
+            }
+    
+            .collapse ul li{
+                background: $orange5;
+            }
+    
+            .dropdown-menu {
+                background: none;
+            }
+            .dropdown-menu a{
+                color: white;
+            }
+            .d-flex .btn{
+                background: $orange4;
+                color: whi;
+                border: 1px solid white;
+            }
+            .form-control{
+                background: $orange4;
+            }
+        }
+        .compras i{
+            color: white;
+            font-size: 2em;
+        }
+        .logo{
+            font-size: 4em;
+            color: white;
+            text-shadow: 3px 3px black;
+            font-family: $font2;
+            text-decoration:none;
+        }
+        .logo::before{
+            width: 0;
+        }
+        .logo__texto{
+            font-size: 1.4em;
+        }
+        }
+        .accordion{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            border-bottom: 2px dotted white;
+            margin-left: 0;
+        }
+        .accordion-body{
+            font-size: 1.2em;
+            & a{
+                text-decoration: none;
+                color: $orange5;
+            }
+        }
+        .accordion-item, .accordion.button{
+            width: 90vw;
+            background: rgb(255, 0, 0);
+            color: white;
+        }
+        .imagenesAcordeon{
+                width: 60vw;
+                height: 50vh;
+        }
+        .aside{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            align-content: center;
+            width: 97%;
+            border: 1px solid;
+    
+            & i{
+                font-size: 3em;
+                width:93%;
+                text-align:center;
+            }
+            & h3, p{
+                text-align: center;
+            }
+        }
+            .footer{
+                display: grid;
+                grid-template-areas: 
+                "logo logo"
+                "copy redes"
+                ;
+                grid-template-rows: 20% 80%;
+                grid-template-columns: 50% 50%;
+                border-top: 2px solid $orange1;
+                height: 30vh;
+        
+                & h3{
+                    grid-area: logo;
+                    font-family: $font2;
+                    font-size: 3em;
+                    color: white;
+                    text-shadow: 3px 1.5px $orange1;
+                    text-align: center;
+                }
+                & h3 i{
+                    font-size: .5em;
+                }
+        
+                &__copy{
+                    line-height: 0.8em;
+                    text-align: center;
+                    margin-top: 1.6em;
+                    
+                }
+                &__redes{
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    font-size: 3em;
+                }
+                @each $red, $color in $redes {
+                    .footer__redes--#{$red}{color: $color;}
+                }
+            }
+    }
+
+    /*NOSOTROS*/
+    @media screen and (max-width: 480px){
+        .header{
+            .navbar{
+                background: none;
+                border: none;
+                height: auto;
+    
+                &-toggler{
+                    background: $orange5;
+                }
+    
+                .collapse ul li{
+                    background: $orange5;
+                }
+    
+                .dropdown-menu {
+                    background: none;
+                }
+                .dropdown-menu a{
+                    color: white;
+                }
+                .d-flex .btn{
+                    background: $orange4;
+                    color: white;
+                    border: 1px solid white;
+                }
+                .form-control{
+                    background: $orange4;
+                }
+            }
+            .compras i{
+                color: white;
+                font-size: 2em;
+            }
+            .logo{
+                font-size: 4em;
+                color: white;
+                text-shadow: 3px 3px $orange5;
+                font-family: $font2;
+                text-decoration:none;
+            }
+            .logo::before{
+                width: 0;
+            }
+            .logo__texto{
+                font-size: 1.4em;
+            }
+        }
+        .container-fluid{
+
+            .transform{
+                display: none;
+            }
+
+            .row>p{
+                display: block;
+                width: 95vw;
+
+                .imgNosotros{
+                    width: 65vw;
+                    height: 30vh;
+                }
+            }
+            
+            .divSpe{
+                width: 90vw;
+                height: auto;
+            }
+            .cubo{
+                display: none;
+            }
+        }
+
+        .footer{
+            display: grid;
+            grid-template-areas: 
+            "logo logo"
+            "copy redes"
+            ;
+            grid-template-rows: 30% 70%;
+            grid-template-columns: 50% 50%;
+            border-top: 2px solid $orange1;
+            height: auto;
+    
+            & h3{
+                grid-area: logo;
+                font-family: $font2;
+                font-size: 3em;
+                color: $orange1;
+                text-align: center;
+            }
+            & h3 i{
+                font-size: .5em;
+            }
+    
+            &__copy{
+                line-height: 0.8em;
+                text-align: center;
+                margin-top: 1.6em;
+            }
+            &__redes{
+                display: flex;
+                justify-content: space-evenly; 
+                font-size: 3em;
+            }
+            @each $red, $color in $redes {
+                .footer__redes--#{$red}{color: $color;}
+            }
+        }
+    }
+    @media screen and (min-width: 767px) and (max-width:1025px){
+        .cubo{
+            display: none;
+        }
+    }
+
+    /*CATALOGO*/
+    @media screen and (max-width: 480px){
+        .header{
+            .navbar{
+                background: none;
+                border: none;
+                height: auto;
+    
+                &-toggler{
+                    background: $orange5;
+                }
+    
+                .collapse ul li{
+                    background: $orange5;
+                }
+    
+                .dropdown-menu {
+                    background: none;
+                }
+                .dropdown-menu a{
+                    color: white;
+                }
+                .d-flex .btn{
+                    background: $orange4;
+                    color: white;
+                    border: 1px solid white;
+                }
+                .form-control{
+                    background: $orange4;
+                }
+            }
+            .compras i{
+                color: white;
+                font-size: 2em;
+            }
+            .logo{
+                font-size: 4em;
+                color: white;
+                text-shadow: 3px 3px $orange5;
+                font-family: $font2;
+                text-decoration:none;
+            }
+            .logo::before{
+                width: 0;
+            }
+            .logo__texto{
+                font-size: 1.4em;
+            }
+        }
+        .cbza{
+            display: block;
+            width: 100%;
+            background: $orange5;
+
+            .breadcrumb{
+                margin: 0;
+                width: 80vw;
+    
+                .breadcrumb-item, a{
+                    color: black;
+                }
+            }
+        }
+        .card{
+            margin-left:2em;
+        }
+        
+        .footer{
+            display: grid;
+            grid-template-areas: 
+            "logo logo"
+            "copy redes"
+            ;
+            grid-template-rows: 30% 70%;
+            grid-template-columns: 50% 50%;
+            border-top: 2px solid $orange1;
+            height: auto;
+    
+            & h3{
+                grid-area: logo;
+                font-family: $font2;
+                font-size: 3em;
+                color: $orange1;
+                text-align: center;
+            }
+            & h3 i{
+                font-size: .5em;
+            }
+    
+            &__copy{
+                line-height: 0.8em;
+                text-align: center;
+                margin-top: 1.6em;
+            }
+            &__redes{
+                display: flex;
+                justify-content: space-evenly; 
+                font-size: 3em;
+            }
+            @each $red, $color in $redes {
+                .footer__redes--#{$red}{color: $color;}
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+    
+        .cbza .breadcrumb .breadcrumb-item a{
+                    color: black;
+                }
+        .catalogo .card{
+            margin: 1.8em;
+            height: 100vh;
+        }
+    }
+
+    /*COMPRAS*/
+    @media screen and (max-width: 480px){
+        .row>* {
+            margin-left: 0.5em;
+            width: 85%;
+            max-width: 90%;
+        }
+        .mainCompras .row{
+            width: 80%;
+        }
+        #formularioCompras{
+            width: 100vw;
+    }
+        
+        .datosBasicos input{    
+            width: 50vw;
+        }
+        .tablaPedido input{
+            width: 19vw;
+            border: 2px solid;
+            margin-left: 0.4em;
+        }
+        .textAreaCompras{
+            width: 70vw;
+        }
+        .mainCompras{
+            .asideCompras{
+                width: 100vw;
+
+                .card{
+                    width: 100%;
+                    height: 65vh;
+                    margin-bottom:0;
+                    padding-bottom: 1em;
+                    margin-left: 1em;
+        
+                    .card-body{
+                        width: 100%;
+                    }
+                    .card-img-top{
+                        width: 45vw;
+                        height: 40vhpx;
+                        margin-left: 1em;
+                    }
+                    h5{
+                        font-size: 1.5em;
+                        text-align: center;
+                    }
+                    .card-text{
+                        font-size: 1.4em;
+                        text-align: center;
+                    }
+                }
+            }  
+        }
+    }
+    @media screen and (min-width: 767px) and (max-width: 960px){
+        .mainCompras{
+            flex-flow: column wrap;
+
+            .asideCompras{
+                width: 100%;
+                margin: 0.3em;
+                padding: 0;
+                display: flex;
+                flex-flow: row wrap;
+        
+                .card{
+                    background: chartreuse;
+                    width: 30vw;
+                    height: auto;
+                    margin-bottom:16px ;
+                    .card-img-top{
+                        width: 210px;
+                        height: 220px;
+                        justify-self: center;
+                    }
+                    h5{
+                        font-size: 1.8em;
+                        text-align: center;
+                    }
+                    .card-text{
+                        font-size: 1.5em;
+                    }
+                }
+                
+            }
+        }
+        #formularioCompras{
+            width: auto;
+        }
+        .datosBasicos input{
+            width: 40vw;
+        }
+        .tablaPedido input{
+            width: 10vw;
+            margin-left: 2.5em;
+        }
+        
+    }
+    @media screen and (min-width: 767px){
+        .card h5{
+            width:100%;
+            margin-left: 0.2em;
+        }
+    }
+
+    /*CONTACTOS*/
+    @media screen and (max-width: 480px){
+       
+        .contactForm{
+            width: 100vw;
+            margin: 0;
+        }
+        .formulario input{
+            width:55vw;
+        }
+        .formulario button{
+            width: 30vw;
+        }
+        .formulario{
+            width: 100%;
+            font-size: 1.2em;
+        }
+        .formulario textarea{
+            width:60vw;
+        }
+        .infoContactos, .geo{
+            width: 85vw;
+            font-size: 1.3em;
+            iframe{
+                margin-left:0;
+                width: 80vw;
+                height: 40vh;
+            }
+        }
+    }
+    @media screen and (max-width: 768px){
+        iframe{
+            width: 40vw;
+        }
+    }

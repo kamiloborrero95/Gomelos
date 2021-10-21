@@ -1,0 +1,22 @@
+$orange1:#ff5d0d;
+$orange2:#eb6200;
+$orange3:#ff8100;
+$orange4:#e88c0c;
+$orange5:#ffa400;
+$gradient1:linear-gradient(95deg, rgba(255,164,0,1) 53%, rgba(255,255,255,1) 100%);
+$font: 'Ubuntu', sans-serif;
+$font2: 'Lobster', cursive;
+$cards: (
+    masmelo: $orange5,
+    coquitos: $orange4,
+    chocolate: $orange5,
+    colombinas: $orange4,
+    bandeja: $orange5,
+    resobado: $orange4,
+    caramelo: $orange5,
+    maremani: $orange4,
+);
+$redes:(
+    facebook: #3b5998,
+    whatsapp: #00bb2d, 
+);

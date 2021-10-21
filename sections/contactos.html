@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gomelos nos puedes contactar a traves de facebook, whatsapp, y correo electronico.">
+    <meta name="keywords" content="masmelos, gomas, dulces, coco, mani, colombinas, dulceria, bocadillo, roscon, galletas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0658fe1b8e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/sass/main.css">
+    <title>Contactos - Gomelos</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container-fluid">
+       
+        <nav class="navbar navbar-expand-lg navbar-light mt-3 mb-5">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-white active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu  border border-danger" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item link-danger" href="catalogo.html">Catalogo</a></li>
+                      <li><a class="dropdown-item link-danger" href="compras.html">Compras</a></li>
+                      <li><a class="dropdown-item link-danger" href="contactos.html">Contactos</a></li>
+                    </ul>
+                  </li>
+                  
+                </ul>
+                
+                <a class="compras" href="./compras.html"><i class="fas fa-shopping-cart"></i></a>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-danger" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <div class="row">
+            <div class="col-12 text-center">
+                <a href="../index.html" class="logo">GOMELOS</a>
+                <p class="logo__texto">Bienvenidos.</p>
+            </div>  
+          </div>
+        </div>
+    </div>
+</header>
+
+    <main class="container-fluid">
+      <section class="row">
+        <div class="contactForm col-6">
+
+            <div class="formulario">      
+              <h1>Formulario de contacto</h1>
+                <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+        
+                  <form action="" method="post">       
+                    
+                        <p>
+                          <label for="nombre" class="colocarNombre">Nombre
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducirNombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                      
+                        <p>
+                          <label for="email" class="colocarEmail">Email
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                    
+                        <p>
+                          <label for="telefone" class="colocarTelefono">Teléfono
+                          </label>
+                            <input type="tel" name="introducirTelefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>    
+                      
+                        <p>
+                          <label for="website" class="colocarWebsite">Sitio web
+                          </label>
+                            <input type="url" name="introducirWebsite" id="website" placeholder="Escribe la URL de tu web">
+                        </p>    
+                      
+                        <p>
+                          <label for="asunto" class="colocarAsunto">Asunto
+                            <span class="obligatorio">*</span>
+                          </label>
+                            <input type="text" name="introducirAsunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>    
+                      
+                        <p>
+                          <label for="mensaje" class="colocarMensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                          </label>                     
+                            <textarea name="introducirMensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                        </p>                    
+                      
+                        <button type="submit" name="enviarFormulario" id="enviar"><p>Enviar</p></button>
+        
+                        <p class="aviso">
+                          <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>          
+                  </form>
+            </div>  
+          </div>
+          <aside class="col-6 pb-5">
+            <div class="infoContactos bg-light p-3">
+              
+              <h3><i class="fas fa-address-book"></i>Contactos:</h3>
+              <p><div class="spinner-border spinner-border-sm" role="status">
+                <span class="visually-hidden"></span>
+              </div> Barbosa, Santander, Colombia</p>
+              <p><div class="spinner-border spinner-border-sm" role="status">
+                <span class="visually-hidden"></span>
+              </div> Telefonos: +57 318 709 1171 - +57 316 817 8821</p>
+              <p><div class="spinner-border spinner-border-sm" role="status">
+                <span class="visually-hidden"></span>
+              </div>Correo electronico: gomelos1164@gmail.com - pqrsgomelos@gmail.com</p>
+
+            </div>
+            <div class="geo bg-light">
+              <h3><i class="fas fa-map-marked-alt"></i>ubicacion:</h3>
+              <div><iframe src="https://www.google.com/maps/embed?pb=!1m27!1m12!1m3!1d63504.408673165!2d-74.00974966942391!3d5.852024299956935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m12!3e0!4m5!1s0x8e419636512a5a97%3A0xe779857c838eea7e!2sVda.%20Buena%20Vista%2C%20La%20Belleza%2C%20Santander!3m2!1d5.85194!2d-73.9747299!4m4!1s0x8e419636512a5a97%3A0xe779857c838eea7e!3m2!1d5.85194!2d-73.9747299!5e0!3m2!1ses!2sco!4v1634158483930!5m2!1ses!2sco" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+            </div>
+          </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+      <h3>GOMELOS</h3>
+      <div class="footer__copy"><i class="far fa-copyright"></i>
+      <p>Esta es una empresa registrada.</p>
+      <p>Camara de comercio.</p>
+      <p>Colombia.</p>
+      </div>
+      <div class="footer__redes">
+          <a class="footer__redes--facebook" href="#"><i class="fab fa-facebook-square"></i></a>
+          <a class="footer__redes--whatsapp" href="#"><i class="fab fa-whatsapp-square"></i></a>
+      </div>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

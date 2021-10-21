@@ -1,0 +1,306 @@
+* {
+  margin: 0.5em;
+  padding: 0; }
+
+@media screen and (min-width: 992px) {
+  body {
+    background: #ff7300;
+    background: linear-gradient(180deg, #ff7300 0%, #ffa1a1 46%, #ff3300 100%);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif; }
+  .header .navbar {
+    height: 3em;
+    border: 1px solid white;
+    background: linear-gradient(to right, #ff8100, white); }
+    .header .navbar .form-control {
+      height: 2em;
+      margin-top: 0.2em; }
+    .header .navbar .dropdown-menu {
+      background: linear-gradient(to right, #ff8100, white); }
+  .header .logo {
+    color: #ff5d0d;
+    font-family: 'Lobster', cursive;
+    font-size: 10em;
+    text-decoration: none;
+    text-shadow: 3px 3px black;
+    cursor: pointer; }
+    .header .logo:hover {
+      color: #eb6200; }
+    .header .logo::before {
+      content: "";
+      width: 5%;
+      height: 4px;
+      background: red;
+      position: absolute;
+      top: 23%;
+      left: 40%;
+      transform: translateX(-40%);
+      transition: 0.8s all; }
+    .header .logo::after {
+      content: "";
+      width: 0%;
+      height: 4px;
+      background: red;
+      position: absolute;
+      bottom: 32%;
+      left: 48%;
+      transform: translateX(-40%);
+      transition: 0.8s all; }
+    .header .logo:hover::before {
+      width: 0; }
+    .header .logo:hover::after {
+      width: 25%; }
+  .header .logo__texto {
+    font-size: 2em;
+    font-style: italic; }
+  .container-fluid {
+    margin: 0;
+    height: auto; }
+    .container-fluid .article > h2 {
+      font-family: 'Lobster', cursive;
+      font-size: 4em;
+      color: #ff5d0d; }
+    .container-fluid .accordion {
+      background: linear-gradient(to right, #ff8100, white);
+      display: flex;
+      flex-flow: column nowrap;
+      margin-bottom: 1.8em; }
+      .container-fluid .accordion .accordion-body {
+        width: 90vw;
+        text-align: center;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        font-size: 2em; }
+      .container-fluid .accordion .accordion-item {
+        width: 90vw;
+        background: linear-gradient(to right, #ff8100, white); }
+      .container-fluid .accordion .accordion-button {
+        background: linear-gradient(to right, #ff8100, white); }
+      .container-fluid .accordion .imagenesAcordeon {
+        width: 45vw;
+        height: 60vh; }
+    .container-fluid .aside {
+      display: grid;
+      grid-template-areas: "productos ubicacion" "recorridos contactos";
+      grid-column: 50% 50%;
+      grid-row: 50% 50%;
+      border: 1px solid #eb6200; }
+      .container-fluid .aside div {
+        border: 1px solid #eb6200;
+        background: linear-gradient(to right, #ff8100, white); }
+      .container-fluid .aside i {
+        font-size: 3.5em;
+        text-align: center; }
+      .container-fluid .aside h3 {
+        font-size: 2em; }
+      .container-fluid .aside p {
+        font-size: 1.5em;
+        text-align: center; }
+  .footer {
+    height: 30vh;
+    display: grid;
+    grid-template-areas: "logo logo" "copy redes";
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 50% 50%;
+    border-top: 2px solid #ff5d0d; }
+    .footer h3 {
+      grid-area: logo;
+      font-family: 'Lobster', cursive;
+      font-size: 5em;
+      color: #ffa400;
+      text-shadow: 3px 1.5px #ff5d0d;
+      text-align: center; }
+    .footer h3 i {
+      font-size: .5em; }
+    .footer__copy {
+      line-height: 0.8em;
+      text-align: center;
+      margin-top: 1.6em; }
+    .footer__redes {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      font-size: 4em;
+      color: white; } }
+
+@media screen and (max-width: 480px) {
+  body {
+    background: #ff7300 no-repeat;
+    background: linear-gradient(to bottom, #ff5d0d 0%, #ff8100 85%, white 100%);
+    height: auto; }
+  .header .navbar {
+    background: none;
+    border: none;
+    height: auto; }
+    .header .navbar-toggler {
+      background: #ffa400; }
+    .header .navbar .collapse ul li {
+      background: #ffa400; }
+    .header .navbar .dropdown-menu {
+      background: none; }
+    .header .navbar .dropdown-menu a {
+      color: white; }
+    .header .navbar .d-flex .btn {
+      background: #e88c0c;
+      color: white;
+      border: 1px solid white; }
+    .header .navbar .form-control {
+      background: #e88c0c; }
+  .header .logo {
+    font-size: 4em;
+    color: white;
+    text-shadow: 3px 3px #ffa400;
+    font-family: 'Lobster', cursive;
+    text-decoration: none; }
+  .header .logo::before {
+    width: 0; }
+  .header .logo__texto {
+    font-size: 1.4em; }
+  .accordion {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border-bottom: 2px dotted white;
+    margin-left: 0; }
+  .accordion-body {
+    font-size: 1.2em; }
+    .accordion-body a {
+      text-decoration: none;
+      color: #ffa400; }
+  .accordion-item, .accordion.button {
+    background: red;
+    color: white; }
+  .imagenesAcordeon {
+    width: 70vw;
+    height: 50vh; }
+  .aside {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 85vw; }
+    .aside i {
+      font-size: 3em;
+      width: 85vw;
+      text-align: center;
+      color: white; }
+    .aside h3, .aside p {
+      text-align: center;
+      color: white;
+      border: 3px solid white;
+      border-style: double; }
+  .footer {
+    display: grid;
+    grid-template-areas: "logo logo" "copy redes";
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 50% 50%;
+    border-top: 2px solid #ff5d0d; }
+    .footer h3 {
+      grid-area: logo;
+      font-family: 'Lobster', cursive;
+      font-size: 3em;
+      color: #ff5d0d;
+      text-align: center; }
+    .footer h3 i {
+      font-size: .5em; }
+    .footer__copy {
+      line-height: 0.8em;
+      text-align: center;
+      margin-top: 1.6em; }
+    .footer__redes {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 3em;
+      color: #eb6200; } }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    background: #ff7300;
+    background: linear-gradient(180deg, #ff3300 0%, #ffa1a1 46%, #ff7300 100%);
+    height: auto; }
+  .header .navbar {
+    background: none;
+    border: none;
+    height: auto; }
+    .header .navbar .navbar-toggler {
+      background: #ffa400; }
+    .header .navbar .collapse ul li {
+      background: #ffa400; }
+    .header .navbar .dropdown-menu {
+      background: none; }
+    .header .navbar .dropdown-menu a {
+      color: white; }
+    .header .navbar .d-flex .btn {
+      background: #e88c0c;
+      color: whi;
+      border: 1px solid white; }
+    .header .navbar .form-control {
+      background: #e88c0c; }
+  .header .logo {
+    font-size: 4em;
+    color: white;
+    text-shadow: 3px 3px black;
+    font-family: 'Lobster', cursive;
+    text-decoration: none; }
+  .header .logo::before {
+    width: 0; }
+  .header .logo__texto {
+    font-size: 1.4em; }
+  .accordion {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    border-bottom: 2px dotted white;
+    margin-left: 0; }
+  .accordion-body {
+    font-size: 1.2em; }
+    .accordion-body a {
+      text-decoration: none;
+      color: #ffa400; }
+  .accordion-item, .accordion.button {
+    width: 90vw;
+    background: red;
+    color: white; }
+  .imagenesAcordeon {
+    width: 70vw;
+    height: 50vh; }
+  .aside {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center; }
+    .aside i {
+      font-size: 3em;
+      width: 93%;
+      text-align: center; }
+    .aside h3, .aside p {
+      text-align: center; }
+  .footer {
+    display: grid;
+    grid-template-areas: "logo logo" "copy redes";
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 50% 50%;
+    border-top: 2px solid #ff5d0d; }
+    .footer h3 {
+      grid-area: logo;
+      font-family: 'Lobster', cursive;
+      font-size: 3em;
+      color: white;
+      text-shadow: 3px 1.5px #ff5d0d;
+      text-align: center; }
+    .footer h3 i {
+      font-size: .5em; }
+    .footer__copy {
+      line-height: 0.8em;
+      text-align: center;
+      margin-top: 1.6em; }
+    .footer__redes {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      font-size: 3em;
+      color: white; } }
